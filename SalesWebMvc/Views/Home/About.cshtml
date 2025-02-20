@@ -1,0 +1,44 @@
+﻿@{
+    ViewData["Title"] = "About";
+}
+
+<div class="container mt-5">
+    <h1 class="display-4">@ViewData["Title"]</h1>
+
+    <div class="card shadow-lg p-4">
+        <h2>Sobre o Projeto</h2>
+        <p>
+            Esta aplicação web foi desenvolvida como parte do último projeto do curso
+            "<strong>C# COMPLETO Programação Orientada a Objetos + Projetos</strong>" na Udemy.
+            O objetivo do projeto é consolidar e aplicar todos os conhecimentos adquiridos ao longo do curso,
+            incluindo arquitetura MVC, Entity Framework, gerenciamento de banco de dados e integração do frontend com Bootstrap.
+        </p>
+
+        <h3>Tecnologias Utilizadas</h3>
+        <ul>
+            <li>ASP.NET Core MVC</li>
+            <li>Entity Framework Core</li>
+            <li>SQL Server</li>
+            <li>Bootstrap</li>
+            <li>C#</li>
+            <li>HTML, CSS e JavaScript</li>
+        </ul>
+
+        <h3>Funcionalidades do Sistema</h3>
+        <ul>
+            <li>Gerenciamento de vendedores</li>
+            <li>Classificação por departamentos</li>
+            <li>Operações CRUD (Criar, Ler, Atualizar, Deletar)</li>
+            <li>Páginas dinâmicas com Razor Views</li>
+        </ul>
+
+        <h3>Desenvolvedor</h3>
+        <p>
+            Este projeto representa a conclusão do curso, consolidando os aprendizados adquiridos.
+        </p>
+
+        <div class="text-center mt-4">
+            <a asp-controller="Home" asp-action="Index" class="btn btn-primary">Voltar para a Home</a>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "SalesWebMvc": {
+      "commandName": "Project",
+      "applicationUrl": "https://localhost:7063;http://localhost:5125"
+    }
+  }
+}

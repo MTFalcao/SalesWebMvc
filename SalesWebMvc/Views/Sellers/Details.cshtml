@@ -1,0 +1,40 @@
+﻿@model SalesWebMvc.Models.Seller;
+
+@{
+	ViewData["Title"] = "Seller Details";
+}
+
+<div class="container mt-4">
+	<h2 class="text-center text-primary">@ViewData["Title"]</h2>
+
+	<div class="row justify-content-center">
+		<div class="col-md-6">
+			<div class="border rounded shadow-sm bg-light p-4">
+				<h4 class="text-info">Seller Information</h4>
+				<hr />
+
+				<dl class="row">
+					<dt class="col-sm-4 fw-bold text-end">Name:</dt>
+					<dd class="col-sm-8">@Html.DisplayFor(model => model.Name)</dd>
+
+					<dt class="col-sm-4 fw-bold text-end">Email:</dt>
+					<dd class="col-sm-8">@Html.DisplayFor(model => model.Email)</dd>
+
+					<dt class="col-sm-4 fw-bold text-end">Birth Date:</dt>
+					<dd class="col-sm-8">@Html.DisplayFor(model => model.BirthDate)</dd>
+
+					<dt class="col-sm-4 fw-bold text-end">Base Salary:</dt>
+					<dd class="col-sm-8">@Html.DisplayFor(model => model.BaseSalary)</dd>
+
+					<dt class="col-sm-4 fw-bold text-end">Department:</dt>
+					<dd class="col-sm-8">@Html.DisplayFor(model => model.Department.Name)</dd>
+				</dl>
+
+				<div class="d-flex justify-content-between mt-3">
+					<a asp-action="Index" class="btn btn-outline-secondary">Back to List</a>
+					<a asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-primary">Edit</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
